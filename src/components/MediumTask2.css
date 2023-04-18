@@ -1,0 +1,193 @@
+.mainDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.imageGallery {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: blueviolet;
+}
+
+.inputDiv {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.inputDiv > input {
+	border: none;
+	padding: 7px 9px;
+	background-color: aqua;
+	color: brown;
+	font-weight: 600;
+	text-transform: lowercase;
+	border-radius: 10px;
+}
+
+.inputDiv > input:focus {
+	border: none;
+}
+
+.inputDiv > button {
+	border: none;
+	padding: 7px 9px;
+	background-color: blue;
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.inputDiv > button:hover {
+	padding: 8px 10px;
+}
+
+.inputDiv > .resetButton {
+	border: none;
+	padding: 7px 9px;
+	background-color: rgb(63, 70, 7);
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.mapDiv {
+	display: flex;
+	flex-wrap: wrap;
+	width: 800px;
+	height: 800px;
+}
+
+.mapDiv > .imageField {
+	width: 400px;
+	height: 400px;
+}
+
+.pagination {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.pagination > li > button {
+	border: none;
+	border-radius: 10px;
+	padding: 7px 9px;
+	color: aliceblue;
+	background-color: rgb(60, 32, 87);
+	cursor: pointer;
+	margin: 0 3px;
+}
+
+/* .pagination > li > button:hover {
+	border-radius: 15px;
+} */
+
+.pagination > li > button:active {
+	color: rgb(60, 32, 87);
+	border: 1px solid rgb(60, 32, 87);
+	background-color: aliceblue;
+}
+.numberButton {
+	border: none;
+	border-radius: 10px;
+	padding: 7px 9px;
+	color: aliceblue;
+	background-color: rgb(60, 32, 87);
+	cursor: pointer;
+	margin: 0 3px;
+}
+.numberButton:active {
+	color: rgb(60, 32, 87);
+	border: 1px solid rgb(60, 32, 87);
+	background-color: aliceblue;
+}
+@media screen and (max-width: 599px) {
+	.mainDiv {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: fit-content;
+	}
+	.imageGallery {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		color: blueviolet;
+	}
+	.inputDiv {
+		display: flex;
+		align-self: center;
+	}
+	.mapDiv {
+		display: flex;
+		width: fit-content;
+		height: fit-content;
+		margin: auto;
+		overflow: hidden;
+		align-self: center;
+		justify-content: center;
+	}
+	.mapDiv > .imageField {
+		display: flex;
+		flex-wrap: wrap;
+		width: 192px;
+		height: 320px;
+		object-fit: cover;
+	}
+}
+
+@media screen and (max-width: 820px) and (min-width: 600px) {
+	.mainDiv {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: fit-content;
+	}
+	.imageGallery {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		color: blueviolet;
+		font-size: 1.9rem;
+	}
+	.inputDiv {
+		display: flex;
+		align-self: center;
+		margin-bottom: 15px;
+	}
+	.inputDiv > input {
+		font-size: 1.5rem;
+	}
+	.inputDiv > button {
+		font-size: 1.5rem;
+	}
+	.mapDiv {
+		display: flex;
+		width: fit-content;
+		height: fit-content;
+		margin: auto;
+		overflow: hidden;
+		align-self: center;
+		justify-content: center;
+	}
+	.mapDiv > .imageField {
+		display: flex;
+		flex-wrap: wrap;
+		width: 400px;
+		height: 430px;
+		object-fit: cover;
+	}
+	.pagination {
+		font-size: 1.8rem;
+	}
+}
